@@ -36,7 +36,8 @@ body{
     border: 1px solid #ccc;
 }
 .tituloLogin{
-    font-family: "Inria Sans", sans-serif;
+    font-family: "Style Script", cursive;
+    font-size: 50px;
     text-align: center;  
     margin-top: 100px;
 }
@@ -110,6 +111,8 @@ body{
 
 .div_registro{
     padding: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .boton_registro{
