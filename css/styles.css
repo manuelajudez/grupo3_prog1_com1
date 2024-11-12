@@ -92,15 +92,15 @@ body{
 }
 
 .container_formularios{
-        font-family: "Inria Sans", sans-serif;
-        background-color: rgba(240, 248, 255, 0.247);
-        width: 1000px;
-        text-align: center;
-        height: 500px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 100px;
-        margin-top: 50px;
+    font-family: "Inria Sans", sans-serif;
+    background-color: rgba(240, 248, 255, 0.247);
+    width: 1000px;
+    text-align: center;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px;
+    margin-top: 50px;
 }
 
 .titulo_registro{

@@ -11,7 +11,6 @@ fetch(api)
     let recetas = data.recipes
 
     console.log(recetas)
-
     let contenedorRecetas = document.querySelector(".recetas")
 
     recetas.forEach(function (receta) {
@@ -21,7 +20,8 @@ fetch(api)
         <div>
           <div>
             <h4>${receta.name}</h4>
-            <p>Cocina: ${receta.cuisine}</p>
+            <p>${receta.cuisine}</p>
+            <img src="${receta.image}" alt="">
             <span>${receta.difficulty}</span>
             <a href="receta.html?id=${receta.id}">Ver receta</a>
           </div>
