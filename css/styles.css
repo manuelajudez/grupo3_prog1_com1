@@ -5,6 +5,7 @@
 }
 body{
     background-color: #D3D3D3;
+    background-image: url(../img/f5a20a7f2f8ef2f6fef7b7ee201dac9e.jpg);
 }
 .contenedorLoginHtml{
     font-family: "Inria Sans", sans-serif;
@@ -15,7 +16,6 @@ body{
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
-    margin-top: 50px;
 }
 .divLogin{
     padding: 20px;
@@ -26,7 +26,7 @@ body{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color: rgb(90, 126, 124);
+    background-color: #669BBC;
 }
 .inputLogin{
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
@@ -36,10 +36,11 @@ body{
     border: 1px solid #ccc;
 }
 .tituloLogin{
-    font-family: "Style Script", cursive;
-    font-size: 50px;
     text-align: center;  
     margin-top: 100px;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .logo{
@@ -54,7 +55,7 @@ body{
     list-style-type: none;
     background-color: rgba(240, 248, 255, 0.247);
     margin: 10px;
-    background-color: #780000e2;
+    background-color: #780000;
     border-radius: 15px;
 }
 
@@ -70,7 +71,7 @@ body{
 }    
 
 .footer{
-    background-color: rgba(240, 248, 255, 0.247);
+    background-color: rgb(247, 248, 250);
     margin: 10px;
     border-radius: 15px;
 }
@@ -121,7 +122,7 @@ body{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color: rgb(90, 126, 124);
+    background-color:#669BBC ;
 }
 
 .input_registro{
