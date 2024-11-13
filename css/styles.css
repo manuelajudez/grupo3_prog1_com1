@@ -34,7 +34,7 @@ body{
     background-color: #D3D3D3;
     border: 1px solid #ccc;
 }
-.tituloLogin{
+.tituloLoginRegister{
     text-align: center;  
     margin-top: 100px;
     font-family: "Bitter", serif;
@@ -78,7 +78,7 @@ a{
 }    
 
 footer{
-    background-image: url(../fotofooter/IMG_3507.JPG );
+    background-image: url(../img/fotoFooter.JPG);
     height: 150px;
 }
 .nombres{
@@ -110,15 +110,7 @@ footer{
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
-    margin-top: 50px;
 }
-
-.titulo_registro{
-    font-family: "Inria Sans", sans-serif;
-    text-align: center;  
-    margin-top: 100px;
-}
-
 .div_registro{
     padding: 20px;
     text-decoration: none;
@@ -138,6 +130,13 @@ footer{
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
     width: 300px;
     height: 40px;
-    background-color: #D3D3D3;
     border: 1px solid #ccc;
+}
+@media (max-width: 420px){
+    .container_formularios{
+        display: contents;
+    }
+    .contenedorLoginHtml{
+        display: contents;
+    }
 }
