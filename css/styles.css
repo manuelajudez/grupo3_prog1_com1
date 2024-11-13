@@ -4,8 +4,7 @@
     margin: 0px;
 }
 body{
-    background-color: #D3D3D3;
-    background-image: url(../img/f5a20a7f2f8ef2f6fef7b7ee201dac9e.jpg);
+    background-color: rgb(244, 244, 229);
 }
 .contenedorLoginHtml{
     font-family: "Inria Sans", sans-serif;
@@ -26,7 +25,7 @@ body{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color: #669BBC;
+    background-color: #780000;
 }
 .inputLogin{
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
@@ -53,27 +52,34 @@ body{
     justify-content: space-between;
     flex-direction: row;
     list-style-type: none;
-    background-color: rgba(240, 248, 255, 0.247);
-    margin: 10px;
-    background-color: #780000;
-    border-radius: 15px;
+    
+}
+header{
+    background-color: #003049;
+    height: 100px;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 .navh{
     display: flex;
     justify-content: center;
-    width: 180px;
+    width: 280px;
     height: 50px;
     padding: 0px;
     text-decoration: none;
     font-weight: normal;
     list-style-type: none;
+    color: white;
+    margin-top: 15px;
+    font-family: Open Sans ;
 }    
 
-.footer{
-    background-color: rgb(247, 248, 250);
-    margin: 10px;
-    border-radius: 15px;
+footer{
+    background-image: url(../fotofooter/IMG_3507.JPG );
+    height: 150px;
 }
 .nombres{
     display: flex;
@@ -85,7 +91,10 @@ body{
 .nombreshh{
     margin: 10px;
     list-style: none;
-    color: black ;
+    color: white ;
+    font-size: 20px;
+    margin-top: 50px;
+
 }
 .formulario{
     display: flex;
@@ -122,7 +131,7 @@ body{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color:#669BBC ;
+    background-color: #780000 ;
 }
 
 .input_registro{
