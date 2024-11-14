@@ -166,4 +166,45 @@ a{
     .contenedorLoginHtml{
         display: contents;
     }
+    header{
+        height: auto;
+        padding: 10px;
+    }
+   .padre{
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   .formulario{
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     margin-bottom: 10px;
+   }
+   #search-bar{
+     width: 100%;
+     margin-left: 40px ;
+   } 
+   .button{
+     width: 100%;
+     margin-left: 40px ;
+     margin-top: 5px;
+   }
+   .barra{
+     width: 100%;
+   }
+   .informacion{
+     flex-direction: column;
+     align-items: flex-start;
+     margin-top: 0;
+   }
+   .navh{
+     width: 100%;
+     margin: 5px 0;
+     text-align: left;
+   }
+   .logo{
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-left: 150px ;
+   }
 }
