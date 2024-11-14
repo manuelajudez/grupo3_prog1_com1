@@ -45,18 +45,37 @@ body{
     font-style: normal;
     color: white;
 }
-
+.padre{
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-around;
+}
 .logo{
     border-radius: 80px ;
-    width: 180px;
-    margin-bottom:  30px ;
+    width: 90px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 .informacion{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    list-style-type: none;
-    
+    align-items: center;
+    list-style-type: none; 
+    margin-top: 20px;
+}
+#search-bar{
+    width: 140px; 
+    height: 30px; 
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.button{
+    width: 140px; 
+    height: 30px; 
+    font-size: 16px;
+    margin-left: 30px;
 }
 header{
     background-color: #003049;
@@ -66,7 +85,10 @@ header{
 a{
     color: white;
     text-decoration: none;
+    margin-right: 100px;
+    margin-left: 100px;
 }
+
 .navh{
     display: flex;
     justify-content: center;
@@ -85,12 +107,13 @@ a{
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    background-color: white;
 }
 
 .nombreshh{
     margin: 10px;
     list-style: none;
-    color: white ;
+    color: black ;
     font-size: 20px;
     margin-top: 50px;
 
