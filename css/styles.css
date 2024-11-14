@@ -8,13 +8,16 @@ body{
 }
 .contenedorLoginHtml{
     font-family: "Inria Sans", sans-serif;
-    background-color: rgba(240, 248, 255, 0.247);
+    background-color: rgba(240, 248, 255, 0.445);
     width: 1000px;
     text-align: center;
     height: 500px;
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
+    border: 2px solid #780000;
+    margin-bottom: 50px;
+
 }
 .divLogin{
     padding: 20px;
@@ -25,13 +28,13 @@ body{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color: #780000;
+    background-color: #003049;
 }
 .inputLogin{
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
     width: 300px;
     height: 40px;
-    background-color: #D3D3D3;
+    background-color: #fff9f9;
     border: 1px solid #ccc;
 }
 .tituloLoginRegister{
@@ -40,6 +43,7 @@ body{
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: white;
 }
 
 .logo{
@@ -76,10 +80,9 @@ a{
     margin-top: 15px;
     font-family: Open Sans ;
 }    
-
 footer{
     background-image: url(../img/fotoFooter.JPG);
-    height: 150px;
+    height: 300px;
 }
 .nombres{
     display: flex;
@@ -103,13 +106,18 @@ footer{
 
 .container_formularios{
     font-family: "Inria Sans", sans-serif;
-    background-color: rgba(240, 248, 255, 0.247);
+    border: 2px solid #780000;
     width: 1000px;
     text-align: center;
     height: 500px;
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
+    margin-bottom: 50px;
+    background-color: rgba(240, 248, 255, 0.573);
+}
+.bodyForms{
+    background-image: url(../img/01EG-Web-Home-Desktop-DOBLE-RESOLUCION-2.jpg.webp);
 }
 .div_registro{
     padding: 20px;
@@ -123,7 +131,7 @@ footer{
     border-radius: 5px;
     border: 0px solid black;
     color: white;
-    background-color: #780000 ;
+    background-color: #003049;
 }
 
 .input_registro{
