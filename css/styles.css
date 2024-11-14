@@ -80,10 +80,6 @@ a{
     margin-top: 15px;
     font-family: Open Sans ;
 }    
-footer{
-    background-image: url(../img/fotoFooter.JPG);
-    height: 300px;
-}
 .nombres{
     display: flex;
     flex-direction: row;
@@ -117,7 +113,7 @@ footer{
     background-color: rgba(240, 248, 255, 0.573);
 }
 .bodyForms{
-    background-image: url(../img/01EG-Web-Home-Desktop-DOBLE-RESOLUCION-2.jpg.webp);
+    background-image: url(../img/imagenForms.webp);
 }
 .div_registro{
     padding: 20px;
