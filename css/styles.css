@@ -218,7 +218,7 @@ a{
     text-decoration: underline;
 }
 
-.titulo_registro{ 
+.titulo_index{ 
     font-family: "Inria Sans", sans-serif;
 }
 
@@ -228,7 +228,7 @@ a{
     justify-content: space-between;
 }
 
-.contenedor{
+.recetas{
     display: flex;
     flex-wrap: wrap;
 

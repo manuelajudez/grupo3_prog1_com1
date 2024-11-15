@@ -17,8 +17,7 @@ fetch(api)
         console.log(receta.name);
 
         contenedorRecetas.innerHTML += `
-        <div class="contenedor">
-          <div class="contenedor_recetas">
+          <article class="contenedor_recetas">
             <h4 class="recetas_name">${receta.name}</h4>
             <p class="recetas_cuisine">${receta.cuisine}</p>
             <img src="${receta.image}" alt="" class="receta_image">
