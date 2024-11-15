@@ -208,3 +208,12 @@ a{
     margin-left: 150px ;
    }
 }
+
+.input_registro_boton{
+    width: 50px;
+}
+
+.ya_registrado{
+    color: #003049;
+    text-decoration: underline;
+}
