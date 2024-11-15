@@ -13,10 +13,10 @@
     <header>
         <nav class="padre">
          <nav class="formulario">
-             <form action="validarbusqueda">
-                 <input type="text" id="search-bar" class="preguntas">
-                 <button type="submit" class="button">buscar</button>
-              </form>
+            <form type action="validarbusqueda" method="get">
+                <input name="search" type="search" id="search-bar" value="" class="preguntas">
+                <button type="submit" class="button">Buscar</button>
+             </form>
            </nav>
          <nav class="barra">
             <ol class="informacion">
@@ -62,7 +62,7 @@
             </section>
             </form>
     </main>
-    <script src="./js/register.js"></script>
+    
     <footer class="footer">
         <ol class="nombres">
             <li class="nombreshh"> Ona Beitia<br></li>
@@ -71,5 +71,6 @@
             <li class="nombreshh"> CookMoc</li>
         </ol>
     </footer>
+    <script src="./js/register.js"></script>
 </body>
 </html>
