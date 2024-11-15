@@ -217,3 +217,41 @@ a{
     color: #003049;
     text-decoration: underline;
 }
+
+.titulo_registro{ 
+    font-family: "Inria Sans", sans-serif;
+}
+
+.recetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenedor_recetas{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.recetas_name{
+    
+}
+
+.recetas_cuisine{
+    
+}
+
+.receta_image{
+    size-adjust: 50%;
+}
+
+.receta_id{
+     display: none;
+}
