@@ -17,13 +17,13 @@ fetch(api)
         console.log(receta.name);
 
         contenedorRecetas.innerHTML += `
-        <div>
-          <div>
-            <h4>${receta.name}</h4>
-            <p>${receta.cuisine}</p>
-            <img src="${receta.image}" alt="">
-            <span>${receta.difficulty}</span>
-            <a href="receta.html?id=${receta.id}">Ver receta</a>
+        <div class="contenedor">
+          <div class="contenedor_recetas">
+            <h4 class="recetas_name">${receta.name}</h4>
+            <p class="recetas_cuisine">${receta.cuisine}</p>
+            <img src="${receta.image}" alt="" class="receta_image">
+            <span class="recetas_difficulty">${receta.difficulty}</span>
+            <a href="receta.html?id=${receta.id}" class="receta_id">Ver receta</a>
           </div>
         </div>`
 });
