@@ -239,19 +239,3 @@ a{
     flex-direction: column;
     width: 30%;
 }
-
-.recetas_name{
-    
-}
-
-.recetas_cuisine{
-    
-}
-
-.receta_image{
-    size-adjust: 50%;
-}
-
-.receta_id{
-     display: none;
-}
