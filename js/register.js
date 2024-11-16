@@ -22,14 +22,14 @@
 // }
 // })
 
-let form = document.querySelector(".register_form");
+let reg_form = document.querySelector(".register_form");
 let mail = document.querySelector("#email");
 let contrasena = document.querySelector("#contrasena");
 
 let error_email = document.querySelector("#invalid_email");
 let error_password = document.querySelector("#invalid_contrasena");
 
-form.addEventListener("submit", function (e) {
+reg_form.addEventListener("submit", function (e) {
     e.preventDefault();
     error_email.style.display = "none";
     error_password.style.display = "none";
@@ -45,6 +45,6 @@ form.addEventListener("submit", function (e) {
         valida = false;
     }
     if(valida){
-        form.submit();
+        reg_form.submit(".boton_registro");
     }
 });

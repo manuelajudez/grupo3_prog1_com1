@@ -25,3 +25,26 @@
 // •	Validar que el campo email no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo email" usando un alert.
 // •	Validar que el campo contraseña no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo contraseña" usando un alert.
 // •	Si el formulario cumple con las validaciones deberá redirigir a la página principal.
+
+let log_form = document.querySelector(".login_form");
+let log_mail = document.querySelector("#log_email");
+let log_contrasena = document.querySelector("#log_contrasena");
+
+let error_email = document.querySelector("#invalid_log_email");
+let error_password = document.querySelector("#invalid_log_contrasena");
+
+log_form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let log_valida = true
+    if(log_mail.value == ""){
+        alert("Por favor, complete el campo email.");
+        log_valida = false;
+    }
+    if(log_contrasena.value == ""){
+        alert("Por favor, complete el campo contraseña.");
+        log_valida = false;
+    }
+    if(log_valida){
+        log_form.submit(".botonLogin");
+    }
+});

@@ -37,22 +37,26 @@
             Bienvenido! Por favor ingrese a su cuenta .
         </h1>
         <section class="contenedorLoginHtml">
-            <form>
+            <form method="get" class="login_form" action="index.html">
                 <div class="divLogin">
                     <label for="Email"></label>
                     <br>
-                    <input type="text" required class="inputLogin" placeholder="Email">
+                    <input type="email" id="log_email" class="inputLogin" placeholder="Email">
+                    <div id="invalid_log_email" class="invalid_feedback email"></div>
                 </div>
                 <div class="divLogin">
                     <label for="Contraseña"></label>
                     <br>
-                    <input type="text" required class="inputLogin" placeholder="Contraseña">
+                    <input type="password" id="log_contrasena" class="inputLogin" placeholder="Contraseña">
+                    <div id="invalid_log_contrasena" class="invalid_feedback contrasena"></div>
                 </div>
                 <div class="divLogin">
-                    <input type="radio" name="recordarme" required> <strong>Recordarme</strong> 
+                    <input type="radio" name="recordarme"> <strong>Recordarme</strong> 
                 </div>
                 <div class="divLogin">
+                    <a href="./index.html">
                     <button type="submit" class="botonLogin">Ingresar</button>
+                    </a>
                 </div>
             </form>
             <div class="divLogin">
