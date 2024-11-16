@@ -36,26 +36,24 @@
         <h1 class="tituloLoginRegister">
             Bienvenido! Por favor registrese.
         </h1>
-        <form>
+        <form method="get" class="register_form" action="login.html">
             <section class="contenedorLoginHtml">
             <div class="div_registro">
                 <label for="email"></label>
-                <input type="email" class="input_registro" placeholder="Email" required>
-                <span class="feedback_email"></span>
+                <input type="email" id="email" class="input_registro" placeholder="Email">
+                <div id="invalid_email" class="invalid_feedback email"></div>
             </div>
             <div class="div_registro">
                 <label for="contraseña"></label>
-                <input type="password" class="input_registro" placeholder="Contraseña" required>
-                <span class="feedback_contra"></span>
+                <input type="password" id="contrasena" class="input_registro" placeholder="Contraseña">
+                <div id="invalid_contrasena" class="invalid_feedback contrasena"></div>
             </div>
             <div class="div_registro">
                 <label for="botones">He leido los terminos y condiciones</label>
                 <input type="checkbox" class="input_registro_boton" name="botones" value="enviar">
-                <span class="feedback_tyc"></span>
             </div>
             <div class="div_registro">
-                <button type="submit" class="boton_registro">Registrarse</button>
-                <span class="feedback_reg"></span> 
+                <button type="submit" class="boton_registro">Registrarse</button> 
             </div>
             <div class="div_registro">
                 <a href="./login.html" class="ya_registrado">Ya tengo una cuenta</a>

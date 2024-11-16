@@ -270,3 +270,12 @@ background-color: #003049;
     color: red; 
     display: none;
 }
+
+#invalid_email{
+    color: #000000;
+margin-top: 20px;
+}
+
+#invalid_contrasena{
+margin-top: 20px;
+}
