@@ -279,3 +279,48 @@ margin-top: 20px;
 #invalid_contrasena{
 margin-top: 20px;
 }
+
+.name{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 32px;
+    margin-bottom: 7px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.instructions{
+    font-family: "Inria Sans", sans-serif;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.prepTimeMinutes{
+    font-family: "Inria Sans", sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;             /* Activa Flexbox en el contenedor */
+  
+}
+
+.mealType{
+    font-family: "Inria Sans", sans-serif;
+    font-size: large;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
