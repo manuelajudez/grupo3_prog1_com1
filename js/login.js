@@ -21,3 +21,7 @@
 //     form.submit();
 // }
 // })
+
+// •	Validar que el campo email no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo email" usando un alert.
+// •	Validar que el campo contraseña no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo contraseña" usando un alert.
+// •	Si el formulario cumple con las validaciones deberá redirigir a la página principal.

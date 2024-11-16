@@ -14,13 +14,13 @@ body{
     height: 500px;
     margin-right: auto;
     margin-left: auto;
-    padding: 100px;
+    padding: 80px;
     border: 2px solid #780000;
     margin-bottom: 50px;
 
 }
 .divLogin{
-    padding: 20px;
+    padding: 15px;
 }
 .botonLogin{
     width: 300px;
@@ -43,6 +43,7 @@ body{
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    margin-bottom: 20px;
     color: white;
 }
 .padre{
