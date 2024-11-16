@@ -220,6 +220,8 @@ a{
 
 .titulo_index{ 
     font-family: "Inria Sans", sans-serif;
+    text-align: center;
+    padding: 25px;
 }
 
 .recetas{
@@ -228,14 +230,27 @@ a{
     justify-content: space-between;
 }
 
-.recetas{
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
 .contenedor_recetas{
     display: flex;
     flex-direction: column;
     width: 30%;
+    padding: 20px;
+}
+
+.recetas_name{
+    font-family: "Inria Sans", sans-serif;
+}
+
+.recetas_cuisine{
+
+}
+
+.recetas_difficulty{
+
+}
+
+.receta_id{
+color: black;
+text-align: left;
+margin: 0px;
 }
