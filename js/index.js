@@ -1,26 +1,30 @@
-// let form= document.querySelector("formulario");
-// let searchbar = document.querySelector("#searchbar");
-// let errorMensaje = document.querySelector("#error-message");
-// form.addEventListener("submit", function (e) {
-// 	e.preventDefault();
-//     errorMensaje.style.display= "none";
-//     errorMensaje.innerText= "";
-// 	let valida= true
-// if (searchbar==="") {
-//     errorMensaje.style.display ="block" ; 
-//     errorMensaje.innerText ="el campo esta vacio";  
-//     valida=false
-// }
-// if (searchbar.length< 3) {
-//     errorMensaje.style.display="block";
-//     errorMensaje.innerText="el campo no puede ser menor a 8 numeros "
-//     valida=false
-// 
-// }
-// if(valida){
-//     form.submit();
-// }
-// })
+let formulario = document.querySelector("#cuestionario"); 
+let searchbar = document.querySelector("#searchbar"); 
+let errorMensaje = document.querySelector("#error-mensaje"); 
+
+formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorMensaje.style.display = "none"; 
+    errorMensaje.innerText = ""; 
+
+    let valida = true; 
+
+    if (searchbar.value === "") {
+        errorMensaje.style.display = "block";
+        errorMensaje.innerText = "El campo está vacío";
+        valida = false;
+    }
+    
+    else if (searchbar.value.length < 3) {
+        errorMensaje.style.display = "block";
+        errorMensaje.innerText = "El campo debe tener al menos 3 caracteres";
+        valida = false;
+    }
+    
+    if (valida) {
+        formulario.submit();
+    }
+});
 
 let api = "https://dummyjson.com/recipes?limit=10"
 

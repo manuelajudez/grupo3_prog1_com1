@@ -1,30 +1,30 @@
-// let form= document.querySelector("formulario");
-// let searchbar = document.querySelector("#searchbar");
-// let errorMensaje = document.querySelector("#error-message");
-// form.addEventListener("submit", function (e) {
-// 	e.preventDefault();
-//     errorMensaje.style.display= "none";
-//     errorMensaje.innerText= "";
-// 	let valida= true
-// if (searchbar==="") {
-//     errorMensaje.style.display ="block" ; 
-//     errorMensaje.innerText ="el campo esta vacio";  
-//     valida=false
-// }
-// if (searchbar.length< 3) {
-//     errorMensaje.style.display="block";
-//     errorMensaje.innerText="el campo no puede ser menor a 8 numeros "
-//     valida=false
-// 
-// }
-// if(valida){
-//     form.submit();
-// }
-// })
+let formulario = document.querySelector("#cuestionario"); 
+let searchbar = document.querySelector("#searchbar"); 
+let errorMensaje = document.querySelector("#error-mensaje"); 
 
-// •	Validar que el campo email no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo email" usando un alert.
-// •	Validar que el campo contraseña no esté vacío. Si está vacío mostrar al usuario el texto "Por favor complete el campo contraseña" usando un alert.
-// •	Si el formulario cumple con las validaciones deberá redirigir a la página principal.
+formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorMensaje.style.display = "none"; 
+    errorMensaje.innerText = ""; 
+
+    let valida = true; 
+
+    if (searchbar.value === "") {
+        errorMensaje.style.display = "block";
+        errorMensaje.innerText = "El campo está vacío";
+        valida = false;
+    }
+    
+    else if (searchbar.value.length < 3) {
+        errorMensaje.style.display = "block";
+        errorMensaje.innerText = "El campo debe tener al menos 3 caracteres";
+        valida = false;
+    }
+    
+    if (valida) {
+        formulario.submit();
+    }
+});
 
 let log_form = document.querySelector(".login_form");
 let log_mail = document.querySelector("#log_email");
@@ -47,4 +47,4 @@ log_form.addEventListener("submit", function (e) {
     if(log_valida){
         log_form.submit(".botonLogin");
     }
-});
+})
