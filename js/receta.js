@@ -34,12 +34,12 @@ form.addEventListener("submit", function (e) {
     errorMensaje.style.display= "none";
     errorMensaje.innerText= "";
 	let valida= true
-if (searchbar.ariaValueMax.trim()==="") {
+if (searchbar==="") {
     errorMensaje.style.display ="block" ; 
     errorMensaje.innerText ="el campo esta vacio";  
     valida=false
 }
-if (searchbar.value.trim().length< 3) {
+if (searchbar.length< 3) {
     errorMensaje.style.display="block";
     errorMensaje.innerText="el campo no puede ser menor a 8 numeros "
     valida=false
