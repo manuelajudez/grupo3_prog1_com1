@@ -1,10 +1,23 @@
-let queryString = location.search
-let obj = new URLSearchParams(queryString)
-let palabraBuscada = obj.get("search")
-console.log(palabraBuscada)
-let result = document.querySelector(".result")
-if (palabraBuscada == ''){
-    result.innerText = "El campo esta vacio";
-}else if (palabraBuscada.length < 3){
-    result.innerText= 'el campo debe ser mayor a 3';
+let form= document.querySelector("formulario");
+let searchbar = document.querySelector("#searchbar");
+let errorMensaje = document.querySelector("#error-message");
+form.addEventListener("submit", function (e) {
+	e.preventDefault();
+    errorMensaje.style.display= "none";
+    errorMensaje.innerText= "";
+	let valida= true
+if (searchbar==="") {
+    errorMensaje.style.display ="block" ; 
+    errorMensaje.innerText ="el campo esta vacio";  
+    valida=false
 }
+if (searchbar.length< 3) {
+    errorMensaje.style.display="block";
+    errorMensaje.innerText="el campo no puede ser menor a 8 numeros "
+    valida=false
+
+}
+if(valida){
+    form.submit();
+}
+})
