@@ -292,8 +292,11 @@ margin-top: 20px;
 .mealType{
     font-family: "Inria Sans", sans-serif;
     font-size: large;
-    margin-top: 20px;
-    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
