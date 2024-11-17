@@ -27,7 +27,6 @@ fetch(api)
 });
 
 let sumatoria = 0
-const adicion = 10
 
 function vermas() {
   fetch(api)
@@ -39,14 +38,14 @@ function vermas() {
 
     let recetas = data.recipes
 
-    let contenedorRecetas = document.querySelector(".vermasrecetas")
+    let contenedorRecetas = document.querySelector(".recetas")
 
     let masrecetas = ""
     
-    for (let i = sumatoria; i < sumatoria + adicion; i++) {
-      const receta = recetas[i];
+    for (let i = sumatoria; i < recetas.length; i++) {
+      let receta = recetas[i];
 
-        masrecetas += `
+      contenedorRecetas.innerHTML += `
           <article class="contenedor_recetas">
             <h4 class="recetas_name">${receta.name}</h4>
             <p class="recetas_cuisine">${receta.cuisine}</p>
@@ -55,8 +54,8 @@ function vermas() {
             <a href="receta.html?id=${receta.id}" class="receta_id">Ver receta</a>
           </article>`;
       }
-      contenedorRecetas.innerHTML += masrecetas;
-      sumatoria += adicion
+
+      sumatoria += 10
 });
 };
 

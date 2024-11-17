@@ -154,6 +154,21 @@ a{
     background-color: #003049;
 }
 
+.contenedor_vermas{
+display: flex;
+justify-content: center;
+margin: 20px;
+}
+
+.botonvermas{
+    width: 85%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px solid black;
+    color: white;
+    background-color: #003049;
+}
+
 .input_registro{
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
     width: 300px;
