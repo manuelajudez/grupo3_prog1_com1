@@ -1,4 +1,5 @@
 let queryString = window.location.search; 
+
 let obj = new URLSearchParams(queryString); 
 
 let id = obj.get("id"); 
@@ -9,6 +10,7 @@ fetch(url)
 .then(function(response) {
     return response.json(); 
 })
+
 .then(function(data) {
     let name = document.querySelector(".name");
     let instructions = document.querySelector(".instructions");
@@ -21,6 +23,7 @@ fetch(url)
     image.src = `${data.image}`; 
     mealType.innerHTML += `${data.mealType}`
 })
+
 .catch(function(err) {
     console.log(err);
 });
