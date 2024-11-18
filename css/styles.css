@@ -380,5 +380,15 @@ margin-top: 20px;
         width: 150px; 
         font-size: 16px;
     }
+    .div_registro{
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    .boton_registro{
+        margin-left: 20px;
+        width: 150px;
+        font-size: 16px;
+        
+    }
    
 }
