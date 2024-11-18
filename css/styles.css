@@ -370,4 +370,15 @@ margin-top: 20px;
    .contenedor_recetas{
     width: 90%;
    }
+    .divLogin {
+        justify-content: flex-start;
+        margin-top: 50px; 
+    }
+
+    .botonLogin {
+        margin-left: 20px;
+        width: 150px; 
+        font-size: 16px;
+    }
+   
 }
