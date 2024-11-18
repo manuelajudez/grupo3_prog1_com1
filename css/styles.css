@@ -367,4 +367,7 @@ margin-top: 20px;
    .boton_registro{
     margin-right: 100px;
    }
+   .contenedor_recetas{
+    width: 90%;
+   }
 }
