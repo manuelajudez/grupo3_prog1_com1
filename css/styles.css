@@ -241,15 +241,18 @@ background-color: #003049;
 #error-mensaje{
     color: red; 
     display: none;
+    margin-left: 20px;
+    font-size: small;
+    
 }
 
 #invalid_email{
     color: #000000;
-margin-top: 20px;
+ margin-top: 20px;
 }
 
 #invalid_contrasena{
-margin-top: 20px;
+ margin-top: 20px;
 }
 
 .name{

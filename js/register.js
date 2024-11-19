@@ -44,7 +44,7 @@ formulario.addEventListener("submit", function (e) {
    
     else if (searchbar.value.length < 3) {
         errorMensaje.style.display = "block";
-        errorMensaje.innerText = "El campo debe tener al menos 3 caracteres";
+        errorMensaje.innerText = "No puede ser menor a 3";
         valida = false;
     }
     
