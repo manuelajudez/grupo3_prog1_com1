@@ -238,7 +238,7 @@ margin: 0px;
 padding: 5px;
 background-color: #003049;
 }
-.error-mensaje{
+#error-mensaje{
     color: red; 
     display: none;
 }
