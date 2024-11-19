@@ -24,6 +24,7 @@ formulario.addEventListener("submit", function (e) {
     if (valida) {
         formulario.submit();
     }
+  
 });
 
 let log_form = document.querySelector(".login_form");
