@@ -25,9 +25,9 @@ formulario.addEventListener("submit", function (e) {
         formulario.submit();
     }
 });
-let api3 = "https://dummyjson.com/recipes/tags"
+let api = "https://dummyjson.com/recipes/tags"
 
-fetch(api3)
+fetch(api)
   .then(function (response) {
     return response.json();
   })
@@ -35,12 +35,12 @@ fetch(api3)
     console.log(data);
 
     let recetas = data
+
     console.log(recetas)
 
-    let contenedorRecetas = document.querySelector(".recetas");
+    let contenedorRecetas = document.querySelector(".recetas")
 
-    if (Array(recetas)){
-    recetas.forEach(function(receta) {
+    recetas.forEach(function (receta) {
         console.log(receta);
         contenedorRecetas.innerHTML += `
         <div class="receta card">
@@ -49,6 +49,5 @@ fetch(api3)
             <a class="btn" href="detalle-categoria.html?categoria=${receta}">Ver comidas de esta categoria</a>
           </div>
         </div>`
-});
-};
-});
+   });
+  });
