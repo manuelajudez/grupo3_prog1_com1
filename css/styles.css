@@ -302,8 +302,29 @@ background-color: rgb(255, 117, 37);
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgb(255, 117, 37);
+  }
+  
+  .receta.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    color: black;
+   
+  }
+  
+.btn{
+    color: rgb(255, 117, 37);
+    margin-left: 05px;
+    font-size: 13px;
+}
 
 
 
