@@ -39,7 +39,8 @@ fetch(api3)
 
     let contenedorRecetas = document.querySelector(".recetas");
 
-    recetas.forEach(function (receta) {
+    if (Array(recetas)){
+    recetas.forEach(function(receta) {
         console.log(receta);
         contenedorRecetas.innerHTML += `
         <div class="receta card">
@@ -48,5 +49,6 @@ fetch(api3)
             <a class="btn" href="detalle-categoria.html?categoria=${receta}">Ver comidas de esta categoria</a>
           </div>
         </div>`
-      });
-  });
+});
+};
+});
