@@ -217,17 +217,20 @@ margin: 20px;
     font-family: "Inria Sans", sans-serif;
     font-size: x-large;
     margin-bottom: 7px;
+    color: black;
 }
 
 .recetas_cuisine{
    font-size: large;
    margin-bottom: 7px;
+   color: black;
 }
 
 .recetas_difficulty{
     font-size: large;
     margin-top: 7px;
     margin-bottom: 7px;
+    color: black;
 }
 
 .receta_id{
@@ -309,7 +312,8 @@ background-color: rgb(255, 117, 37);
     justify-content: center;
     margin-top: 20px;
     color: rgb(255, 117, 37);
-  }
+    margin-bottom: 10px;
+}
   
   .receta.card {
     border: 1px solid #ccc;
@@ -396,7 +400,7 @@ background-color: rgb(255, 117, 37);
    }
     .divLogin {
         justify-content: flex-start;
-        margin-top: 50px; 
+        margin-top: 30px; 
     }
 
     .botonLogin {
@@ -406,13 +410,19 @@ background-color: rgb(255, 117, 37);
     }
     .div_registro{
         justify-content: flex-start;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .boton_registro{
         margin-left: 20px;
         width: 150px;
         font-size: 16px;
         
+    }
+    .ya_registrado{
+        color: white;
+    }
+    .recetas{
+        margin-bottom: 10px;
     }
    
 }
