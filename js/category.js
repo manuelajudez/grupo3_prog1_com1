@@ -25,3 +25,35 @@ formulario.addEventListener("submit", function (e) {
         formulario.submit();
     }
 });
+
+let querystring = location.search;
+let datos = new URLSearchParams(querystring);
+let cat = datos.get("categoria");
+
+console.log(cat);
+console.log('hola')
+let api = 'https://dummyjson.com/recipes/tag/' + cat;
+console.log(api, 'wok')
+
+fetch(api)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data, 'hola');
+
+    let recetas = data.recipes
+    console.log(recetas, 'data')
+    let contenedorRecetas = document.querySelector(".recetas")
+
+    recetas.forEach(function (receta) {
+        console.log(receta);
+        contenedorRecetas.innerHTML += `
+        <div class="receta card">
+          <div class="card-body">
+            <h4 class="card-title">${receta.name}</h4>
+            <p class="card-title">${receta.difficulty}</p>
+            </div>
+        </div>`
+    });
+})
