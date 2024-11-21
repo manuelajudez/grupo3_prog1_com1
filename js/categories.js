@@ -25,3 +25,30 @@ formulario.addEventListener("submit", function (e) {
         formulario.submit();
     }
 });
+let api = "https://dummyjson.com/recipes/tags"
+
+fetch(api)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+
+
+    let recetas = data
+
+    console.log(recetas)
+
+    let contenedorRecetas = document.querySelector(".recetas")
+
+    recetas.forEach(function (receta) {
+        console.log(receta);
+        contenedorRecetas.innerHTML += `
+        <div class="receta card">
+          <div class="card-body">
+            <h4 class="card-title">${receta}</h4>
+            <a class="btn" href="detalle-categoria.html?categoria=${receta}">Ver comidas de esta categoria</a>
+          </div>
+        </div>`
+      });
+  });
