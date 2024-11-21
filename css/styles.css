@@ -321,6 +321,7 @@ background-color: rgb(255, 117, 37);
     padding: 16px;
     width: 300px;
     color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    
   }
   
