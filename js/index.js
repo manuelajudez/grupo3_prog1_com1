@@ -26,36 +26,39 @@ fetch(api)
 });
 });
 
-let sumatoria = 0
+let sumatoria = 10
 
 function vermas() {
-  fetch(api)
+let api2 = `https://dummyjson.com/recipes?limit=10&skip=${sumatoria}`;
+
+  fetch(api2)
   .then(function (response) {
     return response.json();
   })
   .then(function (data){
     console.log(data);
 
-    let recetas = data.recipes
+    let recetas = data.recipes;
 
-    let contenedorRecetas = document.querySelector(".recetas")
-
-    let masrecetas = ""
+    let contenedorRecetas = document.querySelector(".recetas");
     
-    for (let i = sumatoria; i < recetas.length; i++) {
-      let receta = recetas[i];
-
+    if (sumatoria > 51) {
+      alert("No hay mas recetas disponibles")
+      return;
+    }
+    
+    recetas.forEach(function agregarmas(receta) {
       contenedorRecetas.innerHTML += `
-          <article class="contenedor_recetas">
-            <h4 class="recetas_name">${receta.name}</h4>
-            <p class="recetas_cuisine">${receta.cuisine}</p>
-            <img src="${receta.image}" alt="" class="receta_image">
-            <p class="recetas_difficulty">${receta.difficulty}</p>
-            <a href="receta.html?id=${receta.id}" class="receta_id">Ver receta</a>
-          </article>`;
-      }
-
-      sumatoria += 10
+      <article class="contenedor_recetas">
+        <h4 class="recetas_name">${receta.name}</h4>
+        <p class="recetas_cuisine">${receta.cuisine}</p>
+        <img src="${receta.image}" alt="" class="receta_image">
+        <p class="recetas_difficulty">${receta.difficulty}</p>
+        <a href="receta.html?id=${receta.id}" class="receta_id">Ver receta</a>
+      </article>`;
+    })
+      sumatoria += 10;
+      console.log(sumatoria);
 });
 };
 
