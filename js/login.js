@@ -7,24 +7,13 @@ formulario.addEventListener("submit", function (e) {
     errorMensaje.style.display = "none"; 
     errorMensaje.innerText = ""; 
 
-  let valida = true; 
-
-    if (searchbar.value === "") {
+    if (searchbar.value.length < 3) {
         errorMensaje.style.display = "block";
-        errorMensaje.innerText = "El campo está vacío";
-        valida = false;
+        errorMensaje.innerText = "No puede ser menor a 3";
     }
-   
-    else if (searchbar.value.length < 3) {
-        errorMensaje.style.display = "block";
-        errorMensaje.innerText = "No pueden ser menos de 3";
-        valida = false;
-    }
-    
-    if (valida) {
+    else{
         formulario.submit();
     }
-  
 });
 
 let log_form = document.querySelector(".login_form");

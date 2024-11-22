@@ -322,7 +322,7 @@ background-color: rgb(255, 117, 37);
     width: 280px;
     color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff9f9;
+   background-color: rgb(247, 246, 246);
    margin: 20px;
   }
   
@@ -365,6 +365,10 @@ background-color: rgb(255, 117, 37);
      display: flex;
      justify-content: flex-start;
      margin-bottom: 10px;
+   }
+   #error-mensaje{
+    margin-left: 40px;
+    font-size: medium;
    }
    #searchbar{
      width: 100%;
