@@ -366,6 +366,10 @@ background-color: rgb(255, 117, 37);
      justify-content: flex-start;
      margin-bottom: 10px;
    }
+   #error-mensaje{
+    margin-left: 40px;
+    font-size: medium;
+   }
    #searchbar{
      width: 100%;
      margin-left: 40px ;
