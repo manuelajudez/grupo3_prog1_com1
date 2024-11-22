@@ -19,9 +19,9 @@ fetch(api2)
     console.log(recetas)
     let contenedorRecetas = document.querySelector(".recetas")
 
-      if (sumatoria > 51) {
+    if (sumatoria > 51) {
       alert("No hay mas recetas disponibles")
-      return;
+    return;
 }
         for (let i = 0; i < recetas.length; i++) {
           const recetas = data.recipes[i];

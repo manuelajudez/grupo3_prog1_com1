@@ -28,27 +28,32 @@ formulario.addEventListener("submit", function (e) {
 
 let querystring = location.search;
 let datos = new URLSearchParams(querystring);
-let cat = datos.get("tags");
+let categoria = datos.get("categoria");
+let url = `https://dummyjson.com/recipes/tag/${categoria}`; 
+console.log(categoria);
+let recetas = document.querySelector(".recetas")
 
-console.log(cat);
-let api = 'https://dummyjson.com/recipes/tag/' + cat;
-console.log(api, 'api')
-
-fetch(api)
-.then(function(response){
-    return response.json();
+fetch(url)
+.then(function(response) {
+    return response.json(); 
 })
-
-
 .then(function(data) {
-    let recetas = data.recipes
-    console.log(recetas, 'recetas data')
-    let contenedorRecetas = document.querySelector(".recetas")
+    console.log(data.recipes);
+    for (let i = 0; i < data.recipes.length; i++) {
+        
+        let receta = data.recipes[i];
+        document.querySelector(".recetas")
+        recetas.innerHTML += `
+          <article>
+            <img src="${receta.image}" alt="">
+            <h4>${receta.name}</h4>
+            <p>${receta.difficulty}</p>
+            <a href="receta.html?id=${receta.id}">Ver link del detalle</a>
+          </article>`
+        };
+    }
+)
 
-    let name = document.querySelector(".name");
-    let image = document.querySelector(".image"); 
-    
-    contenedorRecetas.innerHTML += `${data.name}`; 
-    image.src = `${data.image}`; 
-    difficulty.innerHTML += `${data.difficulty}`;
+.catch(function(err) {
+    console.log(err);
 });
