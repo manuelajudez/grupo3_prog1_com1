@@ -48,7 +48,7 @@ fetch(api)
     let name = document.querySelector(".name");
     let image = document.querySelector(".image"); 
     
-    name.innerHTML += `${data.name}`; 
+    contenedorRecetas.innerHTML += `${data.name}`; 
     image.src = `${data.image}`; 
     difficulty.innerHTML += `${data.difficulty}`;
 });
