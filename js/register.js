@@ -49,6 +49,6 @@ formulario.addEventListener("submit", function (e) {
     }
     
     if (valida) {
-        submit(".button");
+        formulario.submit();
     }
 });
