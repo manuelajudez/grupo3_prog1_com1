@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function (e) {
     }
     
     if (valida) {
-        formulario.submit();
+        submit(".button");
     }
   
 });
