@@ -27,11 +27,11 @@ fetch(api)
           
         contenedorRecetas.innerHTML += `
           <article class="contenedor_recetas">
-            <h4 class="recetas_name">${receta.name}</h4>
-            <p class="recetas_cuisine">${receta.cuisine}</p>
-            <img src="${receta.image}" alt="" class="receta_image">
-            <p class="recetas_difficulty">${receta.difficulty}</p>
-            <a href="receta.html?id=${receta.id}" class="receta_id">Ver receta</a>
+            <h4 class="recetas_name">${recetas.name}</h4>
+            <p class="recetas_cuisine">${recetas.cuisine}</p>
+            <img src="${recetas.image}" alt="" class="receta_image">
+            <p class="recetas_difficulty">${recetas.difficulty}</p>
+            <a href="receta.html?id=${recetas.id}" class="receta_id">Ver receta</a>
           </article>`
         };
         contenedorRecetas.innerHTML += receta;
