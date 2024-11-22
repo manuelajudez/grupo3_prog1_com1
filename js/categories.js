@@ -43,11 +43,9 @@ fetch(api)
     recetas.forEach(function (receta) {
         console.log(receta);
         contenedorRecetas.innerHTML+= 
-        ` <div class="receta card">
-          <div class="card-body">
+        ` <article class="receta card">
             <h4 class="card-title">${receta}</h4>
             <a class="btn" href="detalle-categoria.html?categoria=${receta}">Ver comidas de esta categoria</a>
-          </div>
-        </div>`
+          </article>`
    });
   });
