@@ -2,6 +2,7 @@ let queryString = window.location.search;
 let obj = new URLSearchParams(queryString); 
 
 let recetaBuscada = obj.get("search"); 
+
 let url = `https://dummyjson.com/recipes/search?q=${recetaBuscada}`; 
 
 fetch(url)
@@ -10,7 +11,8 @@ fetch(url)
 })
 
 .then(function(data) {
-    console.log(data, 'data buscada')
+    console.log(data, `data`)
+
     let recetas = data.recipes
 
     let contenedorRecetas = document.querySelector(".recetas")
@@ -28,5 +30,6 @@ fetch(url)
 })
 
 .catch(function(err) {
+    contenedorRecetas.innerHTML += `error al cargar lo que estabas buscando`;
     console.log(err);
 });
