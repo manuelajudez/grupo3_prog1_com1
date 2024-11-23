@@ -26,8 +26,8 @@ fetch(url)
     let vacio = ""
 
     for (let i = 0; i < data.tags.length; i++) {
-        vacio += `${data.tags[i]}`
-        tags.innerHTML += vacio
+        let tag = data.tags[i];
+        tags.push(tag)
     }
 
 })
