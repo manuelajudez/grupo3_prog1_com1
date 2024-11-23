@@ -1,6 +1,7 @@
 let queryString = window.location.search; 
 let obj = new URLSearchParams(queryString); 
 let recetaBuscada = obj.get("search"); 
+console.log(recetaBuscada);
 
 let contenedorRecetas = document.querySelector(".recetas");
 let tituloBusqueda = document.getElementById("titulo-busqueda");
