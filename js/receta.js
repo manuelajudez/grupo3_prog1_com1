@@ -17,20 +17,15 @@ fetch(url)
     let instructions = document.querySelector(".instructions");
     let prepTimeMinutes = document.querySelector(".prepTimeMinutes");
     let image = document.querySelector(".image"); 
-    let tags = document.querySelector(".tags")
+    let categoria = document.querySelector(".categoria")
+
     name.innerHTML += `${data.name}`; 
     instructions.innerText += `${data.instructions}`; 
     prepTimeMinutes.innerText += `${data.prepTimeMinutes} minutes`; 
     image.src = `${data.image}`; 
-
-    let vacio = ""
-
-    for (let i = 0; i < data.tags.length; i++) {
-        let tag = data.tags[i];
-        tags.push(tag)
+    categoria.innerText += `${data.tags}` 
     }
-
-})
+)
 
 
 .catch(function(err) {

@@ -294,7 +294,14 @@ background-color: rgb(255, 117, 37);
     text-align: center;
     margin-top: 30px;
 }
-
+.categoria{
+    display: flex;
+    color: black;
+    font-family: "Inria Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
 .image{
     display: flex;
     flex-direction: column;
