@@ -12,17 +12,26 @@ fetch(url)
 })
 
 .then(function(data) {
+    console.log(data)
     let name = document.querySelector(".name");
     let instructions = document.querySelector(".instructions");
     let prepTimeMinutes = document.querySelector(".prepTimeMinutes");
     let image = document.querySelector(".image"); 
-    let mealType = document.querySelector(".mealType")
+    let tags = document.querySelector(".tags")
     name.innerHTML += `${data.name}`; 
     instructions.innerText += `${data.instructions}`; 
     prepTimeMinutes.innerText += `${data.prepTimeMinutes} minutes`; 
     image.src = `${data.image}`; 
-    mealType.innerHTML += `${data.mealType}`
+
+    let vacio = ""
+
+    for (let i = 0; i < data.tags.length; i++) {
+        vacio += `${data.tags[i]}`
+        tags.innerHTML += vacio
+    }
+
 })
+
 
 .catch(function(err) {
     console.log(err);

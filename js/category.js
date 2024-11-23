@@ -35,11 +35,11 @@ fetch(url)
         let receta = data.recipes[i];
         document.querySelector(".recetas")
         recetas.innerHTML += `
-          <article>
-            <img src="${receta.image}" alt="">
-            <h4>${receta.name}</h4>
-            <p>${receta.difficulty}</p>
-            <a href="receta.html?id=${receta.id}">Ver link del detalle</a>
+          <article class= "padreCategory">
+            <img src="${receta.image}" alt="" class= "imgCategory">
+            <h4 class="tituloCategory">${receta.name}</h4>
+            <p class= "dificultadCategory">${receta.difficulty}</p>
+            <a href="receta.html?id=${receta.id}" class="detalleCategory">Ver link del detalle</a>
           </article>`
         };
     }

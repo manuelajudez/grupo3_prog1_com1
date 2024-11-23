@@ -212,7 +212,19 @@ margin: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.padreCategory{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+}
+.detalleCategory{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
 .recetas_name{
     font-family: "Inria Sans", sans-serif;
     font-size: x-large;
@@ -435,5 +447,7 @@ background-color: rgb(255, 117, 37);
     .recetas{
         margin-bottom: 10px;
     }
-   
+    .padreCategory{
+        width: 90%;
+    }
 }
