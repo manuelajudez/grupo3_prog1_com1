@@ -260,6 +260,13 @@ background-color: rgb(255, 117, 37);
     font-size: small;
     
 }
+.mensaje-error {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
 
 #invalid_email{
     color: #000000;
