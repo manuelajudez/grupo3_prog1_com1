@@ -23,8 +23,8 @@ fetch(url)
     instructions.innerText += `${data.instructions}`; 
     prepTimeMinutes.innerText += `${data.prepTimeMinutes} minutes`; 
     image.src = `${data.image}`; 
-    categoria.innerText += `${data.tags}` 
-    }
+    categoria.innerText += `<a href=https://dummyjson.com/recipes/tag/${categoria} class="categoria"></a>`
+}
 )
 
 

@@ -58,4 +58,7 @@ formulario.addEventListener("submit", function (e) {
         errorMensaje.style.display = "block";
         errorMensaje.innerText = "No puede ser menor a 3";
     }
+    else{
+        formulario.submit();
+    }
 });
