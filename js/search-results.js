@@ -15,6 +15,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${recetaBuscada}`)
      if (!recetas || recetas.length === 0) {
       contenedorRecetas.innerHTML = `<p class="mensaje-error">Búsqueda inexistente. No se encontraron recetas para "${recetaBuscada}".</p>`;
       return; 
+    }else{
+      contenedorRecetas.innerHTML=`<h2> Resultados para tu  busqueda: "${recetaBuscada}"</h2>`
     }
 
      for (let i = 0; i < recetas.length; i++) {

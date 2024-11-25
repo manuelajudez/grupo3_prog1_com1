@@ -262,7 +262,7 @@ background-color: rgb(255, 117, 37);
 }
 .mensaje-error {
     color: red;
-    font-size: 1.2rem;
+    font-size: medium;
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
