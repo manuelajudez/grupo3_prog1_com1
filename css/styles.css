@@ -303,11 +303,14 @@ background-color: rgb(255, 117, 37);
 }
 .categoria{
     display: flex;
+    flex-direction: column;
     color: black;
     font-family: "Inria Sans", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: center;
+    text-align: center;
+    list-style: none;
 }
 .image{
     display: flex;
@@ -460,6 +463,9 @@ background-color: rgb(255, 117, 37);
     }
     .recetas{
         margin-bottom: 10px;
+    }
+    a.categoria{
+        flex-direction: column;
     }
     .padreCategory{
         width: 90%;

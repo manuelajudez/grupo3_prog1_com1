@@ -33,8 +33,8 @@ fetch(api4)
 
   for (let i = 0; i < categoria.length; i++) {
     const categoria = data[i];
-
-  contenedorRecetas.innerHTML += 
+    
+    contenedorRecetas.innerHTML += 
          `<article class="receta card">
             <h4 class="card-title">${categoria}</h4>
             <a class="btn" href="./category.html?categoria=${categoria}">Ver comidas de esta categoria</a>

@@ -23,11 +23,15 @@ fetch(url)
     instructions.innerText += `${data.instructions}`; 
     prepTimeMinutes.innerText += `${data.prepTimeMinutes} minutes`; 
     image.src = `${data.image}`; 
-    categoria.innerText += `<a href="./category.html?categoria=${data.id}"></a>`
-}
-)
-
-
+    if (data.tags && data.tags.length > 0) {
+        let categoriasHTML = "";
+        for (let i = 0; i < data.tags.length; i++) {
+            const tag = data.tags[i];
+            categoriasHTML += `<li><a href="category.html?category=${tag}" class="categoria">${tag}</a></li>`;
+        }
+        categoria.innerHTML = categoriasHTML;
+    }
+})
 .catch(function(err) {
     console.log(err);
 });
