@@ -25,18 +25,19 @@ fetch(api4)
   .then(function (data) {
     console.log(data);
 
-    let recetas = data
+    let categoria = data
 
-    console.log(recetas)
+    console.log(categoria)
 
     let contenedorRecetas = document.querySelector(".recetas")
 
-    recetas.forEach(function (receta) {
-        console.log(receta);
-        contenedorRecetas.innerHTML += 
-        ` <article class="receta card">
-            <h4 class="card-title">${receta}</h4>
-            <a class="btn" href="category.html?categoria=${receta}">Ver comidas de esta categoria</a>
-          </article>`
-   });
-  });
+  for (let i = 0; i < categoria.length; i++) {
+    const categoria = data[i];
+
+  contenedorRecetas.innerHTML += 
+         `<article class="receta card">
+            <h4 class="card-title">${categoria}</h4>
+            <a class="btn" href="category.html?categoria=${categoria}">Ver comidas de esta categoria</a>
+           </article>`
+  };
+});
