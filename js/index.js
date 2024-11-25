@@ -32,7 +32,7 @@ fetch(api2)
             <p class="recetas_cuisine">${recetas.cuisine}</p>
             <img src="${recetas.image}" alt="" class="receta_image">
             <p class="recetas_difficulty">${recetas.difficulty}</p>
-            <a href="receta.html?id=${recetas.id}" class="receta_id">Ver receta</a>
+            <a href="./receta.html?id=${recetas.id}" class="receta_id">Ver receta</a>
           </article>`
         };
         contenedorRecetas.innerHTML += receta;
