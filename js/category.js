@@ -24,6 +24,7 @@ let url = `https://dummyjson.com/recipes/tag/${categoria}`;
 console.log(categoria);
 let recetas = document.querySelector(".recetas")
 
+
 fetch(url)
 .then(function(response) {
     return response.json(); 
@@ -33,13 +34,13 @@ fetch(url)
     for (let i = 0; i < data.recipes.length; i++) {
         
         let receta = data.recipes[i];
-
+        document.querySelector(".recetas")
         recetas.innerHTML += `
           <article class= "padreCategory">
             <img src="${receta.image}" alt="" class= "imgCategory">
             <h4 class="tituloCategory">${receta.name}</h4>
             <p class= "dificultadCategory">${receta.difficulty}</p>
-            <a class="detalleCategory" href="./category.html?categoria=${data.id}">Ver link del detalle</a>
+            <a href="receta.html?id=${receta.id}" class="detalleCategory">Ver link del detalle</a>
           </article>`
         };
     }

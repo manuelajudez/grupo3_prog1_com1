@@ -27,7 +27,7 @@ fetch(url)
         let categoriasHTML = "";
         for (let i = 0; i < data.tags.length; i++) {
             const tag = data.tags[i];
-            categoriasHTML += `<li><a href="category.html?category=${tag}" class="categoria">${tag}</a></li>`;
+            categoriasHTML += `<li><a href="category.html?categoria=${tag}" class="categoria">${tag}</a></li>`;
         }
         categoria.innerHTML = categoriasHTML;
     }
