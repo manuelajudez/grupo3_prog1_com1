@@ -435,8 +435,9 @@ background-color: rgb(255, 117, 37);
    }
    .navh{
      width: 100%;
-     margin: 5px 0;
+     padding: 5px;
      text-align: left;
+
    }
    .logo{
     align-self: flex-end;
@@ -458,6 +459,7 @@ background-color: rgb(255, 117, 37);
     .divLogin {
         justify-content: flex-start;
         margin-top: 30px; 
+        margin-bottom: 30px;
     }
 
     .botonLogin {
@@ -468,6 +470,7 @@ background-color: rgb(255, 117, 37);
     .div_registro{
         justify-content: flex-start;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     .boton_registro{
         margin-left: 20px;
