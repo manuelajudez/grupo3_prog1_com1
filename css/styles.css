@@ -223,7 +223,7 @@ margin: 20px;
 .detalleCategory{
     text-align: center;
     color: black;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .recetas_name{
@@ -378,6 +378,16 @@ background-color: rgb(255, 117, 37);
     color: #003049;
 }
 
+.resultado_busqueda{
+    font-family: "Inria Sans", sans-serif;
+    font-size: xx-large;
+    color: rgb(255, 117, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
 
 /* MANTENER ABAJO DEL TODO */

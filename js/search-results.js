@@ -10,13 +10,14 @@ fetch(`https://dummyjson.com/recipes/search?q=${recetaBuscada}`)
  .then(function (data) {
      console.log(data, `data buscada`)
      let recetas = data.recipes;
-     let contenedorRecetas = document.querySelector(".recetas")
+     let contenedorRecetas = document.querySelector(".recetas");
+     let resultadosTitulo = document.querySelector(".titulos-busqueda");
     
      if (!recetas || recetas.length === 0) {
       contenedorRecetas.innerHTML = `<p class="mensaje-error">Búsqueda inexistente. No se encontraron recetas para "${recetaBuscada}".</p>`;
       return; 
     }else{
-      contenedorRecetas.innerHTML=`<h2> Resultados para tu  busqueda: "${recetaBuscada}"</h2>`
+      resultadosTitulo.innerHTML=`<h2 class="resultado_busqueda"> Resultados para tu  busqueda: "${recetaBuscada}"</h2>`
     }
 
      for (let i = 0; i < recetas.length; i++) {
