@@ -20,7 +20,7 @@ body{
 
 }
 .divLogin{
-    padding: 15px;
+    padding: 16px;
 }
 .botonLogin{
     width: 300px;
@@ -140,7 +140,7 @@ a{
     background-image: url(../img/imagenForms);
 }
 .div_registro{
-    padding: 20px;
+    padding: 16px;
     text-decoration: none;
     color: black;
 }
@@ -223,8 +223,9 @@ margin: 20px;
 .detalleCategory{
     text-align: center;
     color: black;
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
 .recetas_name{
     font-family: "Inria Sans", sans-serif;
     font-size: x-large;
@@ -253,6 +254,7 @@ margin: 0px;
 padding: 5px;
 background-color: rgb(255, 117, 37);
 }
+
 #error-mensaje{
     color: white; 
     display: none;
@@ -287,7 +289,7 @@ background-color: rgb(255, 117, 37);
 
 .instructions{
     font-family: "Inria Sans", sans-serif;
-    width: 1000px;
+    width: 850px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -367,9 +369,14 @@ background-color: rgb(255, 117, 37);
     font-size: 120%;
 }
 
+.tituloCategory{
+    padding-top: 12px;
+    font-size: larger;
+}
 
-
-
+.detalleCategory{
+    color: #003049;
+}
 
 
 
