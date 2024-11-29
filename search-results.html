@@ -8,36 +8,39 @@
 </head>
 <body>
     <header>
-        <nav class="padre">
+        <div class="padre">
             <nav class="formulario" id="formulario-conteiner">
-                <form id="cuestionario" action="./search-results.html" method="get">
-                    <input name="search" type="search" id="searchbar" placeholder="Buscar recetas..." class="preguntas" required>
-                    <button type="submit" class="button">Buscar</button>
-                    <div id="error-mensaje"></div>
-                  </form>                  
-          </nav>
-         <nav class="barra">
-            <ol class="informacion">
-                <li class="navh"><a href="./index.html">Home</a></li>
-                <li class="navh"><a href="./categories.html">Categorias</a></li>
-                <li class="navh"><a href="./register.html">Registro</a></li>
-                <li class="navh"><a href="./login.html">Login</a></li>
-            </ol>
-        </nav>
-        <div class="logopagina">
-            <img src="./img/logo" alt="logo" class="logo">
+                    <form id="cuestionario" action="./search-results.html" method="get">
+                        <input name="search" type="search" id="searchbar" value="" placeholder="Buscar recetas..." class="preguntas" required>
+                        <button type="submit" class="button">Buscar</button>
+                        <div id="error-mensaje"></div>
+                      </form>                  
+            </nav>
+             <nav class="barra">
+                <ol class="informacion">
+                    <li class="navh"><a href="./index.html">Home</a></li>
+                    <li class="navh"><a href="./categories.html">Categorias</a></li>
+                    <li class="navh"><a href="./register.html">Registro</a></li>
+                    <li class="navh"><a href="./login.html">Login</a></li>
+                </ol>
+            </nav>
+            <div class="logopagina">
+                <img src="./img/logo" alt="logo" class="logo">
+            </div>
         </div>
         </nav>
     </header>
+    <main class="main_search">
     <section class="resultados">
         <div class="titulos-busqueda"></div>
         <div class="recetas"></div>
     </section>
-    <footer class="footer">
+</main>
+    <footer class="footer_search">
         <ol class="nombres">
-            <li class="nombreshh"> Ona Beitia<br></li>
-            <li class="nombreshh"> Catalina Goyanarte <br></li>
-            <li class="nombreshh">Manuela Judez <br></li>
+            <li class="nombreshh"> Ona Beitia</li>
+            <li class="nombreshh"> Catalina Goyanarte</li>
+            <li class="nombreshh">Manuela Judez</li>
             <li class="nombreshh"> CookMoc</li>
         </ol>
     </footer>

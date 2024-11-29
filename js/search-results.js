@@ -8,7 +8,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${recetaBuscada}`)
     return response.json(); })
 
  .then(function (data) {
-     console.log(data, `data buscada`)
+     console.log(data)
      let recetas = data.recipes;
      let contenedorRecetas = document.querySelector(".recetas");
      let resultadosTitulo = document.querySelector(".titulos-busqueda");
@@ -38,5 +38,22 @@ fetch(`https://dummyjson.com/recipes/search?q=${recetaBuscada}`)
   console.log(err);
 });
 
-        
+let formulario = document.querySelector("#cuestionario"); 
+let searchbar = document.querySelector("#searchbar"); 
+let errorMensaje = document.querySelector("#error-mensaje"); 
+
+formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorMensaje.style.display = "none"; 
+    errorMensaje.innerText = ""; 
+
+    if (searchbar.value.length < 3) {
+        errorMensaje.style.display = "block";
+        errorMensaje.innerText = "No puede ser menor a 3";
+    }
+    else{
+        formulario.submit();
+    }
+});
+
   
