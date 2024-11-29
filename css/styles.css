@@ -263,9 +263,9 @@ background-color: rgb(255, 117, 37);
 }
 .mensaje-error {
     color: red;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: bold;
 }
 
